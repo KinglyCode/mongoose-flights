@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Welcome to SEI International</title>
+</head>
+<table id="list">
+    <thead>
+      <tr>
+        <th>Airlines</th>
+        <th>Airports</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% movies.forEach(function(a) { %>
+        <tr>
+          <td><%= a.airline %></td>
+          <td><%= a.airport %></td>
+          <!-- <td><a href="/flights/<%= a._id %>">DETAILS</a></td> -->
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
